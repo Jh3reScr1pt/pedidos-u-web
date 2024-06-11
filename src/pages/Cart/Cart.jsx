@@ -12,7 +12,7 @@ const Cart = () => {
     <div className='cart'>
       <div className="cart-items">
         <div className="cart-items-title">
-          <p>Items</p> <p>Title</p> <p>Price</p> <p>Quantity</p> <p>Total</p> <p>Remove</p>
+          <p>Items</p> <p>Plato</p> <p>Precio</p> <p>Cantidad</p> <p>Total</p> <p>Quitar</p>
         </div>
         <br />
         <hr />
@@ -34,15 +34,15 @@ const Cart = () => {
       </div>
       <div className="cart-bottom">
         <div className="cart-total">
-          <h2>Cart Totals</h2>
+          <h2>Totales del carrito</h2>
           <div>
             <div className="cart-total-details"><p>Subtotal</p><p>Bs {getTotalCartAmount()}</p></div>
             <hr />
-            <div className="cart-total-details"><p>Delivery Fee</p><p>Bs {getTotalCartAmount()===0?0:5}</p></div>
+            <div className="cart-total-details"><p>Gastos de Envío</p><p>Bs {getTotalCartAmount()===0?0:5}</p></div>
             <hr />
             <div className="cart-total-details"><b>Total</b><b>Bs {getTotalCartAmount()===0?0:getTotalCartAmount()+5}</b></div>
           </div>
-          <button onClick={()=>navigate('/order')}>PROCEED TO CHECKOUT</button>
+          <button onClick={()=>navigate('/order')}>CONTINUAR</button>
         </div>
         
       </div>
